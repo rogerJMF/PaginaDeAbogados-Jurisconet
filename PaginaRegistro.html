@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+
+<body style="background-color: #e5e6e8;">
+
+    <div class="divUno">
+        <h1 class="h1">BIENVENID@ A NUESTRA PAGINA DE REGISTRO</h1>
+    </div>
+
+    <h3 class="p1">Ingresa los datos en los siguientes campos para continuar con tu proceso y conecerte mejor </h3>
+
+    <div class="principal">
+
+
+        <div class="izquierdo">
+
+            <form class="formulario" id="registroForm">
+                <label class="texto" for="text"><strong>Ingrese los campos a continuación:</strong></label>
+                <br>
+                <br>
+                <label class="label" for="nombre">Nombre:</label>
+                <input style="border-radius: 10px;" class="nombre" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre " size="70"
+                    required><br><br>
+
+                <label class="label2" for="apellido">Apellido:</label>
+                <input style="border-radius: 10px;" class="apellido" type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
+                    size="70" required><br><br>
+
+                <label class="label3" for="correo">Correo Electrónico:</label>
+                <input style="border-radius: 10px;" class="correo" type="email" id="correo" name="correo" placeholder="Escribe tu correo con @"
+                    size="70" required><br><br>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input style="border-radius: 10px;" type="tel" id="telefono" name="telefono" placeholder="Digita tu numero de telefono" size="70"
+                    required><br><br>
+
+                <label class="label4" for="direccion">Dirección:</label>
+                <textarea style="border-radius: 10px;" class="direccion" id="direccion" name="direccion" cols="68"
+                    placeholder="Escribe tu direccion"></textarea><br><br>
+
+                <input style="border-radius: 10px;" class="boton" type="submit" value="Registrarse">
+            </form>
+
+            <script>
+                document.getElementById("registroForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+                    // Obtener los valores del formulario
+                    var nombre = document.getElementById("nombre").value;
+                    var apellido = document.getElementById("apellido").value;
+                    var correo = document.getElementById("correo").value;
+                    var telefono = document.getElementById("telefono").value;
+                    var direccion = document.getElementById("direccion").value;
+
+                    // Crear el mensaje de agradecimiento
+                    var mensaje = "Gracias por registrarte:\n\n";
+                    mensaje += "Nombre: " + nombre + "\n";
+                    mensaje += "Apellido: " + apellido + "\n";
+                    mensaje += "Correo Electrónico: " + correo + "\n";
+                    mensaje += "Número de Teléfono: " + telefono + "\n";
+                    mensaje += "Dirección: " + direccion;
+
+
+                    alert(mensaje + "\n\n comentanos tu caso para mostrarte los abogados que te pueden ayudar con el");
+                });
+            </script>
+
+        </div>
+
+        <div class="divDerecho">
+
+            <img class="imagen1" src="recursos/gift pagina registro.gif" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="divTres">
+        <form class="form" id="comentariosForm">
+            <label for="comentarios">Comentanos aquí tu caso para contactarte con los abogados que pueden ayudarte con el:</label>
+            <br>
+            <br>
+            <textarea style="border-radius: 10px;" id="comentarios" name="comentarios" rows="10" cols="80" placeholder="Escribenos tu caso para poderte ayudar" ></textarea><br><br>
+            <input class="Enviar" style="border-radius: 10px; background-color: black;color: beige;" class="boton2" type="button" value="Enviar Caso" onclick="mostrarAgradecimiento()">
+        </form>
+    
+        <script>
+            function mostrarAgradecimiento() {
+                var textoComentarios = document.getElementById("comentarios").value;
+                var mensaje = "Gracias por brindarnos tu confianza y exponernos tu caso:\n\n" + textoComentarios;
+                alert(mensaje + "\n\n ya recibimos tu caso y te colocaremos en contacto con los abogados que te pueden ayudar con el");
+            }
+        </script>
+     
+        <p class="p2" >Dale click aqui para que conozcas a los abogados que te pueden ayudar con el proceso que acabas de digitar:</p>
+        <a target="_blank" class="a1" href="PaginaContactos.html"><button style="border-radius: 10px; background-color: black; color: beige;">Abogados disponibles</button></a>
+
+    </div>
+
+</body>
+
+</html>

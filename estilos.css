@@ -1,0 +1,96 @@
+.divUno {
+
+    display: flex;
+    background-color: #f7d8c3;
+    height: 190px;
+    border-radius: 20px;
+
+}
+
+.h1 {
+    margin-top: 50px;
+    margin-left: 25%;
+    color: black ;
+
+}
+
+.divDos {
+    display: flex;
+    background-color: #f4c18a;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.divDerecho{
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-left: 20px ;
+}
+.p1{
+text-align: center;
+padding-top: 20px ;
+
+
+}
+.divTres{
+    background-color:  #e5e6e8;
+    color: black;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    
+}
+.imagen1{
+    width: 300px;
+    margin-left: 210px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.boton{
+    background-color: black;
+    color: azure;
+}
+.a1{
+    color: black;
+    
+}
+
+.imagen2{
+
+    width: 300px;
+    margin-left: 280px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+
+.container{
+    display: flex;
+    height: 400px;
+}
+.enlaceRegistro{
+   padding-left: 320px;
+
+}
+.enlace{
+    padding-left: 390px;
+    
+}
+
+.imagen3{
+    width: 300px;
+    height: 220px;
+    margin-left: 300px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+    
+}
+
+.enlaceEstrategia{
+    margin-left: 357px;
+}
+.Principal{
+    background-color: #f4c18a;
+    border-radius: 20px;
+}

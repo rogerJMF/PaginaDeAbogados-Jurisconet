@@ -1,0 +1,45 @@
+.div1{
+
+    display: flex;
+    background-color: #adadad;
+    height: 190px;
+    border-radius: 20px;
+
+}
+.h1{
+    color: black;
+    margin-left: 25%;
+    margin-top: 70px;
+
+}
+.pU{
+    text-align: center;
+}
+.container{
+    display: flex;
+    margin-top: 3%;
+    background-color: dimgrey;
+    border-radius: 10px;
+}
+.divIzquierdo{
+   width: 55%;
+   margin-left: 3%;
+   margin-top: 3%;
+}
+.divDerecho{
+    margin-top: 4%;
+
+}
+.imagen{
+    width: 69%;
+    height: 80%;
+    margin-left: 15% ;
+}
+.divFinal{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+.h3{
+    margin-left: 40%;
+}
